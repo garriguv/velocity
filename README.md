@@ -8,4 +8,4 @@
 
 Edit the template, and check the template variables then run:
 
-    ./gradlew
+    ./gradlew run
