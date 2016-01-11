@@ -3,7 +3,13 @@ import java.util.HashMap;
 
 public class Main {
     public static void main(String[] args) {
-        File templatesDir = new File(System.getProperty("user.dir"), "src/main/resources");
-        System.out.println((new Generator(templatesDir)).generate("spec.vm", new HashMap<String, String>()));
+        Generator generator = new Generator(new File(System.getProperty("user.dir"), "src/main/resources"));
+
+        String templateName = "spec.vm";
+
+        HashMap<String, String> templateVariables = new HashMap<String, String>();
+        templateVariables.put("NAME", "MyClassSpec");
+
+        System.out.println(generator.generate(templateName, templateVariables));
     }
 }
