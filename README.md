@@ -1,4 +1,4 @@
-# velocity
+# velocity [![Build Status](https://travis-ci.org/garriguv/velocity.svg?branch=master)](https://travis-ci.org/garriguv/velocity)
 
 Apache Velocity template playground.
 
