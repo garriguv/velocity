@@ -1,0 +1,21 @@
+#set( $ClassName = $NAME.substring(0, $NAME.indexOf("Spec")) )
+#import <Specta/Specta.h>
+#import <Specta/Expecta.h>
+
+#import "${ClassName}.h"
+
+@interface ${ClassName} (Spec)
+@end
+
+SpecBegin(${ClassName})
+
+    __block ${ClassName} *subject;
+
+    before(^{
+        subject = [[${ClassName} alloc] init];
+    });
+
+    describe(@"", ^{
+    });
+
+SpecEnd
